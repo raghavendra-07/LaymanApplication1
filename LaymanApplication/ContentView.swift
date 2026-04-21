@@ -8,17 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var vm: AuthViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        TabView {
+            
+            // MARK: - Home
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            
+            // MARK: - Saved
+            SavedView()
+                .tabItem {
+                    Image(systemName: "bookmark.fill")
+                    Text("Saved")
+                }
+            
+            // MARK: - Profile
+            ProfileView(vm: vm)
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
         }
-        .padding()
+        .tint(.orange)
     }
-}
-
-#Preview {
-    ContentView()
 }
