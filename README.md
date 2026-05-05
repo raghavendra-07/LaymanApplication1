@@ -88,7 +88,7 @@ It combines real-time news, authentication, and an AI-powered chatbot to deliver
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/LaymanApp.git
+git clone https://github.com/yourusername/LaymanApplication1.git
 
 2. Open in Xcode
 
