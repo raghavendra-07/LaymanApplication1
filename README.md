@@ -84,51 +84,28 @@ It combines real-time news, authentication, and an AI-powered chatbot to deliver
 
 ---
 
-## ⚙️ Setup Instructions
+⚙️ Setup Instructions
 
-### 1. Clone the repository
-
-```
+1. Clone the repository
 
 git clone https://github.com/yourusername/LaymanApp.git
 
-```
-
-### 2. Open in Xcode
-
-```
+2. Open in Xcode
 
 LaymanApp.xcodeproj
 
-```
+3. Configure API Keys
 
-### 3. Add API Keys
-
-Open `Config.swift` and replace:
-
-```swift
-
-static let geminiAPIKey = "YOUR_GEMINI_KEY"
+- Add your News API key in `Config.swift`:
 
 static let newsAPIKey = "YOUR_NEWS_API_KEY"
 
-```
+- Gemini API is securely handled via Supabase Edge Functions  
+(No API key required on the client side)
 
-👉 Get keys from:
+4. Run the app
 
-* Gemini API: https://aistudio.google.com/app/apikey
-
-* News API: https://newsdata.io
-
----
-
-### 4. Run the app
-
-* Select simulator
-
-* Click ▶️ Run
-
----
+Select a simulator and click ▶️ Run
 
 ## 📌 Notes
 
